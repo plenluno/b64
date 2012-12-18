@@ -439,10 +439,12 @@ static size_t b64_decode_(
                         *dest++ = bytes[2];
                     }
                 }
+#ifndef LIBNODE_USE_B64
                 if(0 != numPads)
                 {
                     break;
                 }
+#endif
             }
         }
 
