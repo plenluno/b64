@@ -299,6 +299,8 @@ static size_t b64_encode_(
     }
 }
 
+#define LIBNODE_USE_B64
+
 /** This function reads in a character string in 4-character chunks, and writes
  * out the converted form in 3-byte chunks to the destination.
  */
